@@ -1,0 +1,43 @@
+{
+  "name": "markdown-offline",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "dexie": "^3.2.4",
+    "dexie-react-hooks": "^1.1.7",
+    "draft-convert": "^2.1.13",
+    "draft-js": "^0.11.7",
+    "lucide-react": "^0.368.0",
+    "marked": "^12.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "fake-indexeddb": "^6.2.5",
+    "jsdom": "^29.0.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0",
+    "vite-plugin-pwa": "^1.2.0",
+    "vitest": "^4.1.3"
+  }
+}
