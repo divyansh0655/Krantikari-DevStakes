@@ -10,13 +10,6 @@ MDOffline is an aggressive Offline-First markdown editor, designed entirely focu
 - **Theming**: Integrated Dark Mode toggle mapped securely. 
 - **Data Egress**: Supports raw `.md` blob transfers natively preventing third-party platform lock-in.
 
-## Architecture & Code Base Guidelines
-Please review [Architecture Map](docs/ARCHITECTURE.md) to parse our database layout structures. We rely upon:
-- **Tailwindcss / ShadCN variables** for visual stability.
-- **Vite / Vitest** encompassing raw bundling checks alongside `PWA-vite-plugin` chunking logic.
-- **Zustand** tracking dynamic state limits cleanly escaping explicit prop-lifting patterns.
-- **Dexie.js** handling IndexedDB interfaces precisely.
-
 ## Quick Start
 ```bash
 cd frontend
