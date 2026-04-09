@@ -1,23 +1,33 @@
-# MDOffline - Progressive Note Taking App
+# Zerolat
 
-MDOffline is an aggressive Offline-First markdown editor, designed entirely focusing on zero-latency saving ensuring users never drop a keystroke. 
+## Team Name
+Krantikari
 
-## Key Features
-- **Offline First**: PWA native routing powered natively by Service-Workers ensuring the application is perfectly usable alongside zero-latency IDB transactions.
-- **Zero Data Loss**: Robust `beforeunload` boundary-layer hooks bound seamlessly to `dexie.js` debouncer hooks. Clashing edits are flushed strictly ensuring persistence regardless of unexpected browser interrupts.
-- **Organization Mechanics**: Fully recursive folder-trees mapped locally inside the sidebar. 
-- **Keyboard Traversal**: Rapid application traversal mapped to `<App>` via global listeners isolating UX complexity. 
-- **Theming**: Integrated Dark Mode toggle mapped securely. 
-- **Data Egress**: Supports raw `.md` blob transfers natively preventing third-party platform lock-in.
+## Team Members
+- Name 1 (GitHub: @username)
+- Name 2 (GitHub: @username)
+- Name 3 (GitHub: @username)
+- Name 4 (GitHub: @username)
+- Name 5 (GitHub: @username) — optional
 
-## Quick Start
-```bash
-cd frontend
-npm install
-npm run dev
-```
+## Idea Chosen
+(Name of the idea — e.g., "Smart Expense Splitter" or "Custom: <your idea name>")
 
-## Running Tests
-```bash
-npm run test
-```
+## Problem Statement
+Brief description of the problem you are solving.
+
+## Tech Stack
+- React
+- (any other libraries/frameworks/tools used)
+
+## Implementation Details
+Describe your approach — architecture decisions, key features, algorithms used, state management strategy, etc.
+
+## How to Run Locally
+Steps to clone and run the project on a local machine.
+
+## Live Demo
+Link to deployed app (Vercel / Netlify / etc.)
+
+## Screenshots / Demo
+(Include a demo video or screenshots showcasing your app's features)
