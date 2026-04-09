@@ -6,7 +6,7 @@ export function useAutoSave(delay = 500) {
   const { updateActiveNote } = useNoteStore();
   const [isSaving, setIsSaving] = useState(false);
 
-  // Reusable debounced save logic
+
   const debouncedSave = useCallback(
     debounce(async (updates) => {
       setIsSaving(true);

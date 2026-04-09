@@ -3,7 +3,7 @@ import { db, addNote, getNotes, deleteNote, addFolder, getFolders } from '../../
 
 describe('Database (Dexie) Operations', () => {
   beforeEach(async () => {
-    // Clear the fake-indexeddb state to ensure isolated tests
+   
     await db.notes.clear();
     await db.folders.clear();
   });
@@ -47,10 +47,10 @@ describe('Database (Dexie) Operations', () => {
     await deleteNote('note-delete');
     
     const notesAfterDelete = await getNotes();
-    // getNotes natively filters isDeleted! 
+    
     expect(notesAfterDelete.length).toBe(0);
     
-    // We can explicitly query Dexie to ensure it persists masked
+   
     const maskedNote = await db.notes.get('note-delete');
     expect(maskedNote.isDeleted).toBe(true);
   });
