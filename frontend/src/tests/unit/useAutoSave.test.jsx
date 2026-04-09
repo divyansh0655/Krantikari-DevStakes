@@ -7,7 +7,7 @@ const { mockUpdateActiveNote } = vi.hoisted(() => ({
   mockUpdateActiveNote: vi.fn().mockResolvedValue(true)
 }));
 
-// Mock Zustand store's `updateActiveNote` to prevent actual Dexie calls
+
 vi.mock('../../store/noteStore', () => ({
   useNoteStore: () => ({
     updateActiveNote: mockUpdateActiveNote
@@ -37,7 +37,7 @@ describe('useAutoSave hook', () => {
       result.current.triggerSave({ content: 'test update' });
     });
     
-    // Not executed immediately
+    
     expect(mockUpdateActiveNote).not.toHaveBeenCalled();
 
     act(() => {
@@ -47,7 +47,7 @@ describe('useAutoSave hook', () => {
     expect(mockUpdateActiveNote).not.toHaveBeenCalled();
 
     act(() => {
-      vi.advanceTimersByTime(300); // reaches 500ms limit
+      vi.advanceTimersByTime(300); 
     });
     
     expect(mockUpdateActiveNote).toHaveBeenCalledWith({ content: 'test update' });
